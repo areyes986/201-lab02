@@ -1,2 +1,2 @@
 # 201-lab02
-Course 201 lab files
+About me guessing game!
