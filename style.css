@@ -1,3 +1,29 @@
+body h1 {
+    text-align: center;
+}
+
 body {
     background-color: rgb(156, 221, 199);
+
+}
+
+p {
+    background-color: rgb(187, 245, 226);
+    margin-left: 90px;
+    margin-right: 90px;
+    border: dashed rgb(102, 179, 153);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+h1 {
+    font-size: 40px;
+    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mochi-picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
