@@ -65,7 +65,7 @@
 
 //Sixth queston
 
-for (var i = 0; i < 4; i = i++) {
+for (var i = 0; i < 4; i++) {
   var pickNumber = prompt('Pick a number from 1 - 10!');
   pickNumber = parseInt(pickNumber);
   console.log('Pick Number', pickNumber);
@@ -81,7 +81,14 @@ for (var i = 0; i < 4; i = i++) {
 }
 
 // Seventh question
-var myBday = prompt('When Mochis\'s Birthday? ex: 01/02/2010');
+for (var i = 0; i < mochiBday.length; i++) {
+var mochiBday = prompt('What month was Mochi born?');
+var mochiBday = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']
+
+  
+}
+
+
 
 
 
