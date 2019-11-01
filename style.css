@@ -48,3 +48,9 @@ article {
     padding: 20px;
     border: dashed rgb(102, 179, 153);
 }
+
+ul {
+    list-style-type: disc;
+}
+
+ 
