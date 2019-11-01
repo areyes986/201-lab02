@@ -63,4 +63,4 @@ if (allyMochi === 'yes' || allyMochi === 'y') {
   alert ('Kind of right! It is my puppy first to me, then a delicious snack. :)');
 }
 
-var plsEnjoy = alert ('Please enjoy my project, ' + userName + '! Please let me know if there is something I missed or can improve on!');
+var plsEnjoy = prompt ('Please enjoy my project, ' + userName + '! Please let me know if there is something I missed or can improve on!');
