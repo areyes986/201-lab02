@@ -98,14 +98,7 @@ var mochiToy = prompt('What are Mochi\'s favorite things?');
 mochiToy = mochiToy.toLowerCase();
 var mochiList = ['ball', 'bone', 'toys', 'dog park', 'chew toy', 'park', 'walks', 'blanket'];
 
-for (var i = 0; i < mochiToy.length; i++) {
-  if (mochiToy === mochiList[i]) {
-    alert('Yep!');
-    i = mochiToy.length + 1;
-  } else {
-    prompt('Nope.');
-  }
-}
+
 
 
 
