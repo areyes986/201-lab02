@@ -94,12 +94,19 @@ for (var i = 0; i < 4; i++) {
 
 // Seventh question
 
-var mochiBday = prompt('What month was Mochi born?');
-mochiBday = mochiBday.toLowerCase();
-for (var i = 0; i < mochiBday.length; i++) {
-  var mochiMonths = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'November', 'December']
-  // console.log ('May', mochiBday);
+var mochiToy = prompt('What are Mochi\'s favorite things?');
+mochiToy = mochiToy.toLowerCase();
+var mochiList = ['ball', 'bone', 'toys', 'dog park', 'chew toy', 'park', 'walks', 'blanket'];
 
+for (var i = 0; i < mochiToy.length; i++) {
+  if (mochiToy === mochiList[i]) {
+    alert('Yep!');
+    i = mochiToy.length + 1;
+  } else {
+    prompt('Nope.');
+  }
 }
+
+
 
 var plsEnjoy = alert('Please enjoy my project, ' + userName + '! Please let me know if there is something I missed or can improve on!');
