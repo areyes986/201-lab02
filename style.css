@@ -7,13 +7,15 @@ body {
 
 }
 
-p {
+.bio {
     background-color: rgb(187, 245, 226);
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 20px;
+    margin-right: 950px;
     padding: 20px;
     border: dashed rgb(102, 179, 153);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: left;
+    position: absolute;
 
 }
 
@@ -35,22 +37,25 @@ h3, ul {
 
 h3 {
     font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    /* padding-top: 10px;
+    padding-bottom: 20px; */
 }
 
-article {
+.workeducation {
     border: dashed;
     background-color: rgb(187, 245, 226);
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 20px;
-    padding: 20px;
+    margin-left: 500px;
+    /* padding: 20px; */
     border: dashed rgb(102, 179, 153);
+    position: relative;
 }
 
 ul {
     list-style-type: disc;
 }
 
+.favorite {
+
+float: clear;
+}
  
