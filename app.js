@@ -121,31 +121,34 @@ alert('Correct answer is 3!');
 
 // Seventh question
 
-var mochiQuestion = prompt('What are Mochi\'s favorite things?');
-console.log(mochiQuestion);
-mochiQuestion = mochiQuestion.toLowerCase();
-var mochiList = ['ball', 'bone', 'bulbasaur', 'dog park', 'bully stick'];
-console.log(mochiList);
-var mochiGuess = 6;
+function containQ7() {
+  var mochiQuestion = prompt('What are Mochi\'s favorite things?');
+  console.log(mochiQuestion);
+  mochiQuestion = mochiQuestion.toLowerCase();
+  var mochiList = ['ball', 'bone', 'bulbasaur', 'dog park', 'bully stick'];
+  console.log(mochiList);
+  var mochiGuess = 6;
 
-while(mochiGuess > 0){
-  for (var i = 0; i < mochiList.length; i++){
-    if (mochiQuestion === mochiList[i]) {
-      alert('Yep, you are right.');
-      correctAnswers++;
-      mochiGuess = 0;
+  while(mochiGuess > 0){
+    for (var i = 0; i < mochiList.length; i++){
+      if (mochiQuestion === mochiList[i]) {
+        alert('Yep, you are right.');
+        correctAnswers++;
+        mochiGuess = 0;
+      }
+    }
+    mochiGuess --;
+    console.log(mochiQuestion);
+    if (mochiGuess !== 0 && mochiGuess!== -1){
+      mochiQuestion = prompt('Nope! Try again!');
+    } else if (mochiGuess === 0) {
+      alert('These are the correct answers: ball, bone, bulbasaur, dog park, bully stick');
+    } else if (mochiGuess === -1){
+      alert('Ding Ding Ding! These are all the correct answers: ball, bone, bulbasaur, dog park, bully stick');
     }
   }
-  mochiGuess --;
-  console.log(mochiQuestion);
-  if (mochiGuess !== 0 && mochiGuess!== -1){
-    mochiQuestion = prompt('Nope! Try again!');
-  } else if (mochiGuess === 0) {
-    alert('These are the correct answers: ball, bone, bulbasaur, dog park, bully stick');
-  } else if (mochiGuess === -1){
-    alert('Ding Ding Ding! These are all the correct answers: ball, bone, bulbasaur, dog park, bully stick');
-  }
 }
+containQ7();
 
 function math(){
   console.log(correctAnswers);
@@ -153,6 +156,6 @@ function math(){
   return correct;
 }
 
-alert('Well, ' + userName + '.' + 'You got ' + math() + ' correct!' + 'Well done!') 
+alert('Well, ' + userName + '.' + 'You got ' + math() + ' correct!' + 'Well done!');
 
 alert('Please enjoy my project, ' + userName + '! Please let me know if there is something I missed or can improve on!');
